@@ -1,0 +1,36 @@
+@use "mixins" as m;
+@use "variables" as v;
+
+
+.container_bgpic {
+    width:100%;
+    height: 100vh;
+    background: url(/src/assets/negative-space-black-forest-dawn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .maintext {
+        color:v.$seconday;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transform: translateY(50%);
+        padding: 20px; 
+       
+    }
+
+    .arrow {
+        position: absolute;
+        bottom: 10px;
+        margin-bottom: 20px;
+        @include m.arrow;
+
+    }
+}
+
+
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/bc5eefc1c7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/src/scss/main.scss" />
+  </head>
+  <body>
+    <div class="container_bgpic">
+      <header>
+        <nav class="navbar">
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <ul class="menu">
+            <li><a href="#home">Hem</a></li>
+            <li><a href="#about">Om</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="maintext" id="home">
+        <h1>Welcome to nature</h1>
+        <p>A journey through time and sheep</p>
+        <p>To see how... cotton... is mage, made I mean...</p>
+      </main>
+
+      <section class="arrow">
+        <a href="#about"
+          ><i class="icon fa-sharp fa-solid fa-circle-down"></i
+        ></a>
+      </section>
+    </div>
+    <div class="wrapper" id="about">
+      <section class="title"><h2>Träffa laget</h2></section>
+      <section class="team">
+        <article class="teammember">
+          <p class="teammember__name">Rakib</p>
+          <p class="teammember__image">
+            <img
+              class="memberimage"
+              src="/src/assets/profiles/Rakib_Square.png"
+              alt="Rakib"
+            />
+          </p>
+          <p class="teammember__description">
+            <i class="fa-solid fa-quote-right"></i>Rakib är vår vassaste node-utvecklare och
+            håller ständigt ett öga på nya tekniker
+          </p>
+        </article>
+        <article class="teammember">
+          <p class="teammember__name">Alexandra</p>
+          <p class="teammember__image">
+            <img
+              class="memberimage"
+              src="/src/assets/profiles/Alexandra_Square.png"
+              alt="Alexandra"
+            />
+          </p>
+          <p class="teammember__description">
+            <i class="fa-solid fa-quote-right"></i></i>Alexandra håller koll på alla över allt
+            och ser till att det flyter
+          </p>
+        </article>
+        <article class="teammember">
+          <p class="teammember__name">Lasse</p>
+          <p class="teammember__image">
+            <img
+              class="memberimage"
+              src="/src/assets/profiles/NoPerson_Square.png"
+              alt="ingen bild"
+            />
+          </p>
+          <p class="teammember__description">
+            <i class="fa-solid fa-quote-right"></i></i>Gör övriga saker...mestadels
+          </p>
+        </article>
+        <article class="teammember">
+          <p class="teammember__name">Sebastian</p>
+          <p class="teammember__image">
+            <img
+              class="memberimage"
+              src="/src/assets/profiles/Sebastian_Square.png"
+              alt="Sebastian"
+            />
+          </p>
+
+          <p class="teammember__description">
+            <i class="fa-solid fa-quote-right"></i>
+            En av våra utbildare som har stor erfarenhet av ganska många saker
+          </p>
+        </article>
+      </section>
+
+      <section class="arrow2">
+        <a href="#contact"
+          ><i
+            class="icon fa-sharp fa-solid fa-circle-down"
+            style="color: black"
+          ></i
+        ></a>
+      </section>
+    </div>
+    <footer class="containerlist" id="contact">
+      <ul class="containerlist__adress">
+        <li>Tegel Consulting AB</li>
+        <li>Agatvägen 18</li>
+        <li>168 60 Bromma</li>
+      </ul>
+      <ul class="containerlist__kontakt">
+        <li>info@tegelconsulting.se</li>
+        <li>070-123 456 78</li>
+      </ul>
+      <ul class="containerlist__socialmedia">
+        <li><i id="socialmediaicon" class="bi bi-instagram"></i> Instagram</li>
+        <li><i id="socialmediaicon" class="bi bi-twitter"></i> Twitter</li>
+        <li><i id="socialmediaicon" class="bi bi-facebook"></i> Facebook</li>
+      </ul>
+    </footer>
+  </body>
+</html>

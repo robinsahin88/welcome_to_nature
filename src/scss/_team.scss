@@ -1,0 +1,76 @@
+@use "mixins" as m;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+    
+ .title {
+            font-size: 1.2rem;
+        }
+    .team {
+
+        width: 100%;
+
+        
+       
+        .teammember {
+            display: flex;
+           flex-direction: column;
+            justify-content: center;
+           align-items: center;
+           
+            
+            &__name {
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+            &__image {
+                .memberimage {
+                    @include m.memberimage;
+                }
+            }
+
+            &__description {
+                @include m.description;
+
+                // till desktop
+                @media  screen and (min-width:768px) {
+                    width: 430px;
+                    font-size: 1rem;
+                    padding: 30px;
+        
+                }
+                
+                .fa-solid {
+                    @include m.quote;
+                }
+            }
+        }
+        //till desktop
+        @media  screen and (min-width:768px) {
+            @include m.desktopteam;
+
+        }
+
+    }
+    .arrow2 {
+        
+        
+        margin: 20px;
+        @include m.arrow;
+       
+    
+      
+      
+
+       
+        
+    }
+
+
+}
