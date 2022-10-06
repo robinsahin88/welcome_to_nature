@@ -7,23 +7,18 @@
     align-items: center;
     position: relative;
    
-    
  .title {
             font-size: 1.2rem;
         }
     .team {
-
         width: 100%;
 
-        
-       
         .teammember {
             display: flex;
            flex-direction: column;
             justify-content: center;
            align-items: center;
            
-            
             &__name {
                 font-weight: bold;
                 font-size: 1.2rem;
@@ -43,7 +38,6 @@
                     width: 430px;
                     font-size: 1rem;
                     padding: 30px;
-        
                 }
                 
                 .fa-solid {
@@ -59,18 +53,7 @@
 
     }
     .arrow2 {
-        
-        
         margin: 20px;
-        @include m.arrow;
-       
-    
-      
-      
-
-       
-        
+        @include m.arrow;    
     }
-
-
 }
